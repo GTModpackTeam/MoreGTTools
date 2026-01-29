@@ -1,4 +1,4 @@
-package com.github.gtexpert.testmod.modules;
+package com.github.gtexpert.gtmoretools.modules;
 
 import java.io.File;
 import java.util.*;
@@ -22,8 +22,8 @@ import org.apache.logging.log4j.Logger;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableList;
 
-import com.github.gtexpert.testmod.api.ModValues;
-import com.github.gtexpert.testmod.api.modules.*;
+import com.github.gtexpert.gtmoretools.api.ModValues;
+import com.github.gtexpert.gtmoretools.api.modules.*;
 
 public class ModuleManager implements IModuleManager {
 

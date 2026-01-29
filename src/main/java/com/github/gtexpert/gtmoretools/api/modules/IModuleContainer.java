@@ -1,4 +1,4 @@
-package com.github.gtexpert.testmod.api.modules;
+package com.github.gtexpert.gtmoretools.api.modules;
 
 public interface IModuleContainer {
 

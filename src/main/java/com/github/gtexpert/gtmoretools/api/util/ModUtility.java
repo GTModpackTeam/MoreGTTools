@@ -1,4 +1,4 @@
-package com.github.gtexpert.testmod.api.util;
+package com.github.gtexpert.gtmoretools.api.util;
 
 import java.util.Objects;
 import java.util.Random;
@@ -18,7 +18,7 @@ import gregtech.api.unification.material.Material;
 import gregtech.api.unification.stack.ItemMaterialInfo;
 import gregtech.api.unification.stack.MaterialStack;
 
-import com.github.gtexpert.testmod.api.ModValues;
+import com.github.gtexpert.gtmoretools.api.ModValues;
 
 public class ModUtility {
 

@@ -1,4 +1,4 @@
-package com.github.gtexpert.testmod.api.modules;
+package com.github.gtexpert.gtmoretools.api.modules;
 
 /**
  * Basically {@link net.minecraftforge.fml.common.LoaderState} but only for launch stages.

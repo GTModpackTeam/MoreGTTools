@@ -1,4 +1,4 @@
-package com.github.gtexpert.testmod.api.util;
+package com.github.gtexpert.gtmoretools.api.util;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import org.jetbrains.annotations.Nullable;
 
 import gregtech.api.GTValues;
 
-import com.github.gtexpert.testmod.api.ModValues;
+import com.github.gtexpert.gtmoretools.api.ModValues;
 
 public enum Mods {
 

@@ -1,4 +1,4 @@
-package com.github.gtexpert.testmod.api.util;
+package com.github.gtexpert.gtmoretools.api.util;
 
 import java.util.List;
 

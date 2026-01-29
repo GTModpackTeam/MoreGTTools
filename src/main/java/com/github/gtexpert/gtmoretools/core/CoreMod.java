@@ -1,4 +1,4 @@
-package com.github.gtexpert.testmod.core;
+package com.github.gtexpert.gtmoretools.core;
 
 import java.io.*;
 import java.util.Map;
@@ -8,8 +8,8 @@ import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 import org.jetbrains.annotations.Nullable;
 
-import com.github.gtexpert.testmod.api.ModValues;
-import com.github.gtexpert.testmod.api.util.ModLog;
+import com.github.gtexpert.gtmoretools.api.ModValues;
+import com.github.gtexpert.gtmoretools.api.util.ModLog;
 
 public class CoreMod implements IFMLLoadingPlugin {
 

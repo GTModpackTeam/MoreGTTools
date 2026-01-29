@@ -1,4 +1,4 @@
-package com.github.gtexpert.testmod.api.modules;
+package com.github.gtexpert.gtmoretools.api.modules;
 
 import java.util.Collections;
 import java.util.List;
@@ -25,8 +25,8 @@ public interface IModule {
     /**
      * What other modules this module depends on.
      * <p>
-     * e.g. <code>new ResourceLocation("testmod", "foo_module")</code> represents a dependency on the module
-     * "foo_module" in the container "testmod"
+     * e.g. <code>new ResourceLocation("gtmoretools", "foo_module")</code> represents a dependency on the module
+     * "foo_module" in the container "gtmoretools"
      */
     @NotNull
     default Set<ResourceLocation> getDependencyUids() {
@@ -68,7 +68,7 @@ public interface IModule {
     default void registerRecipesLowest(RegistryEvent.Register<IRecipe> event) {}
 
     /**
-     * Register packets using TestMod's packet handling API here.
+     * Register packets using GTMoreTools's packet handling API here.
      */
     default void registerPackets() {}
 

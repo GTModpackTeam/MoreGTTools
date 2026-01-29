@@ -1,7 +1,7 @@
-package com.github.gtexpert.testmod.modules;
+package com.github.gtexpert.gtmoretools.modules;
 
-import com.github.gtexpert.testmod.api.ModValues;
-import com.github.gtexpert.testmod.api.modules.IModuleContainer;
+import com.github.gtexpert.gtmoretools.api.ModValues;
+import com.github.gtexpert.gtmoretools.api.modules.IModuleContainer;
 
 public class Modules implements IModuleContainer {
 
