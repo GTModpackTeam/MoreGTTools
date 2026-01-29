@@ -31,6 +31,7 @@ import com.github.gtexpert.gtmoretools.api.util.Mods;
 import com.github.gtexpert.gtmoretools.integration.chisel.ChiselConfigHolder;
 import com.github.gtexpert.gtmoretools.integration.chisel.ChiselRecipeMaps;
 import com.github.gtexpert.gtmoretools.integration.chisel.ChiselUtil;
+
 import team.chisel.api.carving.ICarvingGroup;
 import team.chisel.common.carving.Carving;
 
@@ -114,9 +115,9 @@ public class ChiselBlocksRecipe {
                         if (Mods.ProjectRedIllumination.isModLoaded()) {
                             ChiselUtil.addVariation("lamp" + colorName,
                                     ModUtility.getModItem(Mods.Names.PROJECT_RED_ILLUMINATION, "lamp", 1, i));
-                        ChiselUtil.addVariation("lamp" + colorName,
-                                ModUtility.getModItem(Mods.Names.PROJECT_RED_ILLUMINATION, "lamp", 1, i + 16));
-                    }
+                            ChiselUtil.addVariation("lamp" + colorName,
+                                    ModUtility.getModItem(Mods.Names.PROJECT_RED_ILLUMINATION, "lamp", 1, i + 16));
+                        }
                         ChiselUtil.addVariation("lamp" + colorName, new ItemStack(lamp, 1, lampMeta));
                         lampMeta++;
                     }

@@ -12,9 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import gregtech.api.GTValues;
 import gregtech.api.items.toolitem.IGTTool;
 import gregtech.api.items.toolitem.ItemGTTool;
-import gregtech.api.items.toolitem.ToolHelper;
 import gregtech.api.unification.OreDictUnifier;
-import gregtech.api.unification.material.Materials;
 
 import com.github.gtexpert.gtmoretools.api.ModValues;
 
