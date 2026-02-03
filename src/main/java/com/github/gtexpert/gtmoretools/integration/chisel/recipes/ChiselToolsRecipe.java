@@ -1,8 +1,8 @@
 package com.github.gtexpert.gtmoretools.integration.chisel.recipes;
 
 import gregtech.api.recipes.ModHandler;
-
 import gregtech.common.ConfigHolder;
+
 import com.github.gtexpert.gtmoretools.api.util.Mods;
 
 public class ChiselToolsRecipe {

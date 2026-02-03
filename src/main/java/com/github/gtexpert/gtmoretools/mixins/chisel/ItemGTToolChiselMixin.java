@@ -9,8 +9,11 @@ import net.minecraft.world.World;
 
 import org.spongepowered.asm.mixin.Mixin;
 
+import gregtech.api.items.toolitem.IGTTool;
+import gregtech.api.items.toolitem.IGTToolDefinition;
 import gregtech.api.items.toolitem.ItemGTTool;
 import gregtech.api.items.toolitem.ToolHelper;
+import gregtech.api.unification.material.Materials;
 
 import team.chisel.api.IChiselGuiType;
 import team.chisel.api.IChiselGuiType.ChiselGuiType;
@@ -72,16 +75,27 @@ public abstract class ItemGTToolChiselMixin implements IChiselItem {
 
         int toCraft = Math.min(source.getCount(), target.getMaxStackSize());
 
-        // Check remaining durability
-        int durabilityLeft = chisel.getMaxDamage() - chisel.getItemDamage() + 1;
-        toCraft = Math.min(toCraft, durabilityLeft);
+        if (!gtexpert$isUnbreakable(chisel)) {
+            IGTToolDefinition toolStats = ((IGTTool) chisel.getItem()).getToolStats();
+            int damagePerCraft = toolStats.getToolDamagePerCraft(chisel);
 
-        // Damage the tool using GT's damage system
-        ToolHelper.damageItem(chisel, player, toCraft);
+            int durabilityLeft = chisel.getMaxDamage() - chisel.getItemDamage() + 1;
+            toCraft = Math.min(toCraft, durabilityLeft / Math.max(1, damagePerCraft));
+
+            ToolHelper.damageItem(chisel, player, toCraft * damagePerCraft);
+        }
 
         ItemStack result = target.copy();
         source.shrink(toCraft);
         result.setCount(toCraft);
         return result;
+    }
+
+    private boolean gtexpert$isUnbreakable(ItemStack stack) {
+        if (stack.getTagCompound() != null && stack.getTagCompound().getBoolean(ToolHelper.UNBREAKABLE_KEY)) {
+            return true;
+        }
+        ItemGTTool tool = (ItemGTTool) (Object) this;
+        return tool.getToolMaterial(stack) == Materials.Neutronium;
     }
 }

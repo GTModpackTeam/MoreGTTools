@@ -1,6 +1,9 @@
 item.gt.tool.chisel.name=%s Chisel
 gt.tool.class.chisel=Chisel
 
+item.gt.tool.wand.name=%s Wand
+gt.tool.class.wand=Wand
+
 # singleblock
 # Auto Chisel
 gtmoretools.machine.auto_chisel.lv.name=Basic Auto Chisel

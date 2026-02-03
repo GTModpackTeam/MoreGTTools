@@ -1,6 +1,9 @@
 item.gt.tool.chisel.name=%sのチゼル
 gt.tool.class.chisel=チゼル
 
+item.gt.tool.wand.name=%sのワンド
+gt.tool.class.wand=ワンド
+
 # singleblock
 # Auto Chisel
 gtmoretools.machine.auto_chisel.lv.name=基本型自動彫刻機
