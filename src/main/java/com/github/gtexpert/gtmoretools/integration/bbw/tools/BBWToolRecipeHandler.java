@@ -1,4 +1,4 @@
-package com.github.gtexpert.gtmoretools.integration.chisel.tools;
+package com.github.gtexpert.gtmoretools.integration.bbw.tools;
 
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 
@@ -11,7 +11,7 @@ import gregtech.api.unification.ore.OrePrefix;
 import gregtech.api.unification.stack.UnificationEntry;
 import gregtech.common.ConfigHolder;
 
-public class ChiselToolRecipeHandler {
+public class BBWToolRecipeHandler {
 
     public static void registerRecipes() {
         for (Material material : GregTechAPI.materialManager.getRegisteredMaterials()) {
@@ -19,43 +19,43 @@ public class ChiselToolRecipeHandler {
 
             // Flint uses gem instead of plate/ingot
             if (material == Materials.Flint) {
-                processFlintChiselRecipe();
+                processFlintWandRecipe();
                 continue;
             }
 
             if (!material.hasFlag(GENERATE_PLATE)) continue;
 
-            processChiselRecipe(material);
+            processWandRecipe(material);
         }
     }
 
-    private static void processChiselRecipe(Material material) {
+    private static void processWandRecipe(Material material) {
         if (ConfigHolder.recipes.hardToolArmorRecipes) {
-            ModHandler.addShapedRecipe(String.format("chisel_%s", material.getName()),
-                    ChiselToolItems.CHISEL.get(material),
-                    "fP", "Sh",
+            ModHandler.addShapedRecipe(String.format("wand_%s", material.getName()),
+                    BBWToolItems.WAND.get(material),
+                    " fP", " Sh", "S  ",
                     'P', new UnificationEntry(OrePrefix.plate, material),
                     'S', new UnificationEntry(OrePrefix.stick, Materials.Wood));
         } else {
-            ModHandler.addShapedRecipe(String.format("chisel_%s", material.getName()),
-                    ChiselToolItems.CHISEL.get(material),
-                    " I", "S ",
+            ModHandler.addShapedRecipe(String.format("wand_%s", material.getName()),
+                    BBWToolItems.WAND.get(material),
+                    "  I", " S ", "S  ",
                     'I', new UnificationEntry(OrePrefix.ingot, material),
                     'S', new UnificationEntry(OrePrefix.stick, Materials.Wood));
         }
     }
 
-    private static void processFlintChiselRecipe() {
+    private static void processFlintWandRecipe() {
         if (ConfigHolder.recipes.hardToolArmorRecipes) {
-            ModHandler.addShapedRecipe("chisel_flint",
-                    ChiselToolItems.CHISEL.get(Materials.Flint),
-                    "fF", "Sh",
+            ModHandler.addShapedRecipe("wand_flint",
+                    BBWToolItems.WAND.get(Materials.Flint),
+                    " fF", " Sh", "S  ",
                     'F', new UnificationEntry(OrePrefix.gem, Materials.Flint),
                     'S', new UnificationEntry(OrePrefix.stick, Materials.Wood));
         } else {
-            ModHandler.addShapedRecipe("chisel_flint",
-                    ChiselToolItems.CHISEL.get(Materials.Flint),
-                    " F", "S ",
+            ModHandler.addShapedRecipe("wand_flint",
+                    BBWToolItems.WAND.get(Materials.Flint),
+                    "  F", " S ", "S  ",
                     'F', new UnificationEntry(OrePrefix.gem, Materials.Flint),
                     'S', new UnificationEntry(OrePrefix.stick, Materials.Wood));
         }

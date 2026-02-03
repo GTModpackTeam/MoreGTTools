@@ -1,4 +1,4 @@
-package com.github.gtexpert.gtmoretools.integration.chisel.tools;
+package com.github.gtexpert.gtmoretools.integration.bbw.tools;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,25 +16,24 @@ import gregtech.api.unification.OreDictUnifier;
 
 import com.github.gtexpert.gtmoretools.api.ModValues;
 
-public final class ChiselToolItems {
+public final class BBWToolItems {
 
     private static final List<IGTTool> TOOLS = new ArrayList<>();
 
-    public static IGTTool CHISEL;
+    public static IGTTool WAND;
 
-    private ChiselToolItems() {}
+    private BBWToolItems() {}
 
     public static List<IGTTool> getAllTools() {
         return TOOLS;
     }
 
     public static void init() {
-        CHISEL = register(ItemGTTool.Builder.of(ModValues.MODID, "chisel")
-                .toolStats(b -> b.crafting().damagePerCraftingAction(2)
+        WAND = register(ItemGTTool.Builder.of(ModValues.MODID, "wand")
+                .toolStats(b -> b.behaviors(WandBehavior.INSTANCE)
                         .cannotAttack().attackSpeed(-1.0F))
-                .oreDict("toolChisel")
-                .secondaryOreDicts("craftChisel")
-                .toolClasses("chisel")
+                .oreDict("toolWand")
+                .toolClasses("wand")
                 .build());
     }
 
