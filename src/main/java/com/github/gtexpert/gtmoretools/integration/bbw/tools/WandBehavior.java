@@ -105,7 +105,7 @@ public class WandBehavior implements IToolBehavior {
 
                     // Store undo data in NBT
                     if (!itemstack.isEmpty()) {
-                        storeUndoData(itemstack, placedBlocks, sourceTriplet, sourceItems, wandItem);
+                        storeUndoData(itemstack, placedBlocks, sourceTriplet, sourceItems);
                     }
                 }
             }
@@ -194,8 +194,7 @@ public class WandBehavior implements IToolBehavior {
     }
 
     private static void storeUndoData(ItemStack itemstack, ArrayList<Point3d> placedBlocks,
-                                      ReplacementTriplet sourceTriplet, ItemStack sourceItems,
-                                      IWandItem wandItem) {
+                                      ReplacementTriplet sourceTriplet, ItemStack sourceItems) {
         int[] placedIntArray = new int[placedBlocks.size() * 3];
         for (int i = 0; i < placedBlocks.size(); i++) {
             Point3d currentPoint = placedBlocks.get(i);
