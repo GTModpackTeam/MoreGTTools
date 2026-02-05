@@ -1,7 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "gtmoretools:items/tools/chisel",
-    "layer1": "gtmoretools:items/tools/chisel_base"
-  }
-}

@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gtmt:items/tools/chisel",
+    "layer1": "gtmt:items/tools/chisel_base"
+  }
+}

@@ -1,0 +1,27 @@
+item.gt.tool.chisel.name=%s Chisel
+gt.tool.class.chisel=Chisel
+
+item.gt.tool.wand.name=%s Wand
+gt.tool.class.wand=Wand
+
+# singleblock
+# Auto Chisel
+gtmt.machine.auto_chisel.lv.name=Basic Auto Chisel
+gtmt.machine.auto_chisel.lv.tooltip=Your ideal, we will sculpt it./nMaterial in the left, chiseling to the right. See JEI's Chiseling page for details./n§dAuthor:§f @tier940
+gtmt.machine.auto_chisel.mv.name=Advanced Auto Chisel
+gtmt.machine.auto_chisel.mv.tooltip=Your ideal, we will sculpt it/nMaterial in the left, chiseling to the right. See JEI's Chiseling page for details./n§dAuthor:§f @tier940
+gtmt.machine.auto_chisel.hv.name=Advanced Auto Chisel II
+gtmt.machine.auto_chisel.hv.tooltip=Your ideal, we will sculpt it/nMaterial in the left, chiseling to the right. See JEI's Chiseling page for details./n§dAuthor:§f @tier940
+gtmt.machine.auto_chisel.ev.name=Advanced Auto Chisel III
+gtmt.machine.auto_chisel.ev.tooltip=Your ideal, we will sculpt it./nMaterial in the left, chiseling to the right. See JEI's Chiseling page for details./n§dAuthor:§f @tier940
+gtmt.machine.auto_chisel.iv.name=Elite Auto Chisel
+gtmt.machine.auto_chisel.iv.tooltip=Your ideal, we will sculpt it/nMaterial in the left, chiseling to the right. See JEI's Chiseling page for details./n§dAuthor:§f @tier940
+gtmt.machine.auto_chisel.luv.name=Elite Auto Chisel II
+gtmt.machine.auto_chisel.luv.tooltip=Your ideal, we will sculpt it/nMaterial in the left, chiseling to the right. See JEI's Chiseling page for details./n§dAuthor:§f @tier940
+gtmt.machine.auto_chisel.zpm.name=Elite Auto Chisel III
+gtmt.machine.auto_chisel.zpm.tooltip=Your ideal, we will sculpt it./nMaterial in the left, chiseling to the right. See JEI's Chiseling page for details./n§dAuthor:§f @tier940
+gtmt.machine.auto_chisel.uv.name=Ultimate Auto Chisel
+gtmt.machine.auto_chisel.uv.tooltip=Your ideal, we will sculpt it/nMaterial in the left, chiseling to the right. See JEI's Chiseling page for details./n§dAuthor:§f @tier940
+
+# recipemaps
+recipemap.auto_chisel.name=Auto Chisel
