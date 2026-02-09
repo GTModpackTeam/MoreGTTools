@@ -25,8 +25,8 @@ env:
   NAME: "GTMoreTools"
 
   # Curseforge and Modrinth project IDs
-  CURSEFORGE_PROJECT_ID: "851103"
-  MODRINTH_PROJECT_ID: "ipueNiWG"
+  CURSEFORGE_PROJECT_ID: "1458022"
+  MODRINTH_PROJECT_ID: "iPEC89hE"
 
 concurrency:
   group: publish-${{ github.head_ref || github.ref }}
@@ -76,18 +76,18 @@ jobs:
           github-draft: false
           github-prerelease: false
           github-token: ${{ secrets.GITHUB_TOKEN }}
-#          modrinth-id: ${{ env.MODRINTH_PROJECT_ID }}
-#          modrinth-token: "${{ secrets.MODRINTH_API_KEY }}"
-#          modrinth-dependencies: |
-#            G1ckZuWK(required)
-#            tULldUx4(required)
-#          curseforge-id: ${{ env.CURSEFORGE_PROJECT_ID }}
-#          curseforge-token: "${{ secrets.CURSEFORGE_API_KEY }}"
-#          curseforge-dependencies: |
-#            mixin-booter(required)
-#            gregtech-ce-unofficial(required)
-#            chisel(recommended)
-#            better-builders-wands(recommended)
+          modrinth-id: ${{ env.MODRINTH_PROJECT_ID }}
+          modrinth-token: "${{ secrets.MODRINTH_API_KEY }}"
+          modrinth-dependencies: |
+            G1ckZuWK(required)
+            tULldUx4(required)
+          curseforge-id: ${{ env.CURSEFORGE_PROJECT_ID }}
+          curseforge-token: "${{ secrets.CURSEFORGE_API_KEY }}"
+          curseforge-dependencies: |
+            mixin-booter(required)
+            gregtech-ce-unofficial(required)
+            chisel(recommended)
+            better-builders-wands(recommended)
           files: |
             build/libs/!(*-@(dev|sources|javadoc)).jar
             build/libs/*-@(sources).jar
