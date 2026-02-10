@@ -1,3 +1,8 @@
+# v1.1.1
+- Fix aluminum recipe conflicts with Chisel.
+
+* * *
+
 # v1.1.0
 - Fix modid.
 
